@@ -32,25 +32,29 @@ $endfor$
 </head>
 <body data-theme="preston">
 <main>
+<div class="honey" style='margin-bottom: 12px;'>
+  <a href='/' style='text-decoration: none; font-weight: bold; font-size: 20pt; '>Echo Lake Research</a>
+</div>
 
-<h1 id="echo-lake-research" class="honey" style="text-align: left;">
-<a href='/' style='text-decoration: none;'>Echo Lake Research</a>
-<span style='font-weight: normal; font-size: 12pt; opacity: 0.8;'>jason@echolakeresearch.org</span>
-</h1>
-<div class='top-menu'>
+</div>
+<div class='top-menu mist'>
+    <span class='honey' style='opacity: 0.7; font-size: 16px; position: absolute; top: -36px; right: 0px;'>
+      &nbsp;&nbsp;&nbsp;
+      <a href='/about' style='text-decoration: none;'>About</a>
+      &nbsp;&bullet;&nbsp;
+      <a href='/contact' style='text-decoration: none;'>Contact</a>
+    </span>
     <p>
-      <a href='/about'>About</a>
-      &nbsp;&bull;&nbsp;
       <a href='/gardening'>Gardening</a>
-      &nbsp;&bull;&nbsp;
+
       <a href='/community'>Community</a>
-      &nbsp;&bull;&nbsp;
+
       <a href='/health'>Health</a>
-      &nbsp;&bull;&nbsp;
+
       <a href='/food'>Food</a>
-      &nbsp;&bull;&nbsp;
+
       <a href='/crops'>Crops</a>
-      &nbsp;&bull;&nbsp;
+
       <a href='/permaculture'>Permaculture</a>
     </p>
 </div>
