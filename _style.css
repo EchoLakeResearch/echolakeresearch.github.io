@@ -308,7 +308,7 @@ video {
 
 
 /* Preston Theme */
-[data-theme=preston] *:not(pre,code,[data-button]) {
+[data-theme=preston] p, td {
   font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
 }
 [data-theme=preston],
