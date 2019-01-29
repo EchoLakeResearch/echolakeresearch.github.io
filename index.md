@@ -2,7 +2,7 @@ Our mission is to help people in our local community find better food, stronger 
 
 ## Attend a workshop! {.blue}
 
-If you are near the Maltby WA we would love to have you stop by for an in-person workshop. They are designed to give you immediately valuable skills that will let you live better. Email jason@echolakeresearch.org for more information.
+If you are near the Maltby WA we would love to have you stop by for an in-person workshop. They are designed to give you immediately valuable skills that will let you live better. Email jason@echolakeresearch.org for more information. 
 
 ## Focus areas
 
