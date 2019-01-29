@@ -61,7 +61,6 @@ html {
   font-weight: 400;
   min-height: 100%;
   -webkit-text-size-adjust: 100%;
-  background-image: url(./ricepaper-texture.png);
   background-image: url(/ricepaper-texture.png);
   background-attachment: fixed;
   background-repeat: repeat-y repeat-x;
