@@ -1,6 +1,4 @@
-Our mission is to help people in our local community find better food, stronger community, and more resilient living by connecting together, and by connecting to this place we call home.
-
-You can read a bit more about our approach on our [about page](about.html), and you can [follow us on Facebook](https://www.facebook.com/EchoLakeResearch/).
+Our mission is to help people in our local community find better food, stronger community, and more resilient living by connecting together, and by connecting to this place we call home. Learn more on our [about page](about.html), and [get updates on Facebook](https://www.facebook.com/EchoLakeResearch/).
 
 ## Attend a workshop! {.blue}
 
