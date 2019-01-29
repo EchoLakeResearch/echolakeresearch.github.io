@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type='text/css'>
+  /*
+  # The Mad CSScientist's Basic CSS Stylesheet
+  written by Tommy Hodgins: https://gist.github.com/tomhodgins/e330ec1826d1cde2b8b0
+  ## Usage
+  Add this stylesheet to barebones HTML documents to instantly add some sensible defaults for text or documentation
+      <link href=http://staticresource.com/basic.css rel=stylesheet>
+  This stylesheet contains multiple themes. To apply a theme add the attribute `data-theme` with the value `book`, `dark`, or `code` to the HTML tag.
+      <html data-theme=dark>
+  */
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    outline: none;
+  }
+  ::-moz-selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::-webkit-selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::-webkit-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :-moz-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  ::-moz-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :-ms-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  ::-ms-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :placeholder-shown {
+    color: rgba(0,0,0,.5);
+  }
+  html {
+    color: #333;
+    font-size: 14pt;
+    line-height: 1.4;
+    font-weight: 400;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #fefff6;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+  #container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 910px;
+    min-height: 100%;
+    padding: 5em;
+    padding-top: 24px;
+    box-shadow: #d2d2d2 0px 0px 48px;
+    margin-top: 132px;
+    margin-bottom: 84px;
+    background: white;
+  }
+  q:before {content: '\201c'}
+  q:after  {content: '\201d'}
+  q q:before {content: '\2018'}
+  q q:after  {content: '\2019'}
+  h1!important, h2!important, h3!important, h4!important, h5!important, h6!important {
+    color: #555;
+    margin: .5em 0;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-break: break-word;
+  }
+  .mist {
+    color: #7A9D96!important;
+  }
+  .green {
+    color: #5A6029!important;
+  }
+  .honey {
+    color: #987859!important; /*#DCAE1D!important;  #ad7837 */
+  }
+  .sky {
+    color: #CAE4DB!important;
+  }
+  .blue {
+    color: #00303F!important;
+  }
+  .top-menu {
+    position: relative;
+    display: inline-block;
+  }
+  .top-menu p a {
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .top-menu p a:first-child {
+    padding-left: 0px;
+  }
+  
+  .top-menu p a:last-child {
+    padding-right: 0px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: left;
+    font-size: 180%;
+    font-weight: 500;
+    line-height: 1;
+    text-shadow: white 0 -1px 0;
+  }
+  h1 + h2 {
+    color: #777!important;
+    margin-top: -1em;
+    font-size: 150%;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: left;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  h3 {
+    font-size: 130%;
+  }
+  h4 {
+    font-size: 115%;
+  }
+  h5 {
+    font-size: 100%;
+  }
+  h6 {
+    font-size: 100%;
+  }
+  a {
+    color: inherit;
+    outline: none !important;
+  }
+  a:hover,
+  a:focus {
+    color: #DCAE1D;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+  }
+  *:not(pre) > code {
+    color: #333;
+    background: #def;
+    display: inline-block;
+    line-height: 1.3;
+    padding: 0 .3em;
+    margin: 0 .15em;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,.1) 0 1px 0;
+    font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  *:not(pre) > code a {
+    color: indigo;
+  }
+  pre {
+    color: #839496;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0 2em 0;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+    word-break: break-word;
+    white-space: pre-wrap;
+    font-kerning: auto;
+    background: #002b36;
+    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: inset rgba(0,0,0,.075) 0 -3px 10px,
+                inset rgba(255,255,255,.15) 0 1px 0,
+                rgba(0,0,0,.3) 0 1px .5px,
+                rgba(0,0,0,.15) 0 3px 5px;
+  }
+  li {
+    font-size: 12pt;
+    padding: .25em 0;
+  }
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12pt;
+  }
+  * + p {
+    margin-top: .5em;
+  }
+  input:not([type=checkbox]):not([type=radio]),
+  textarea {
+    width: 100%;
+    font-size: 12pt;
+    margin-bottom: 1em;
+    padding: 10px 8px;
+  }
+  blockquote {
+    color: #777;
+    margin: 1em auto 0 auto;
+    padding: 1em 2em;
+    position: relative;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  blockquote:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: currentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+  }
+  blockquote p {
+    color: #333;
+    font-size: 250%;
+    font-weight: 500;
+    font-style: italic;
+  }
+  blockquote footer {
+    margin-top: .5em;
+    padding: 0;
+    color: currentColor;
+    font-size: 125%;
+    text-align: left;
+  }
+  blockquote footer:before {
+    content: '— ';
+  }
+  footer {
+    color: #777;
+    font-size: 11pt;
+    text-align: center;
+    padding: 2em .5em;
+  }
+  table td {
+    width: 45%;
+    vertical-align: top;
+  }
+  table td:nth-child(2) {
+    width: 10%;
+  }
+  img {
+    margin-bottom: 12px;
+  }
+  a,
+  input,
+  textarea,
+  button,
+  label,
+  iframe,
+  audio,
+  video {
+    touch-action: manipulation;
+  }
+  [class*="float-"] {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+  }
+  [data-tooltip][class*="float-"]{
+    pointer-events: all;
+  }
+  @media (min-width: 500px) {
+    .float-left {
+      float: left;
+      margin: 0 .5em .5em 0;
+      max-width: 50%;
+    }
+    .float-right {
+      float: right;
+      margin: 0 0 .5em .5em;
+      max-width: 50%;
+    }
+  }
+  
+  /* Preston Theme */
+  [data-theme=preston] p,
+  [data-theme=preston] td {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  }
+  [data-theme=preston],
+  [data-theme=preston] body {
+    background-color: white;
+  }
+  [data-theme=preston] h1,
+  [data-theme=preston] h2,
+  [data-theme=preston] h3,
+  [data-theme=preston] h4,
+  [data-theme=preston] h5,
+  [data-theme=preston] h6 {
+    font-weight: 500;
+    color: #111;
+    text-shadow: none;
+  }
+  [data-theme=preston] main > p,
+  [data-theme=preston] main > ul li,
+  [data-theme=preston] main > ol li {
+    font-size: 12pt;
+    line-height: 1.7;
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  }
+  [data-theme=preston] main > p + p {
+    margin-top: 1em;
+  }
+  [data-theme=preston] blockquote p,
+  [data-theme=preston] blockquote q {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    font-weight: 300;
+  }
+  [data-theme=preston] blockquote cite,
+  [data-theme=preston] blockquote footer {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    font-weight: 700;
+  }
+  [data-theme=preston] form select,
+  [data-theme=preston] form .split-input > input,
+  [data-theme=preston] form .split-input > select,
+  [data-theme=preston] form [type="text"],
+  [data-theme=preston] form [type="tel"],
+  [data-theme=preston] form [type^="cc-"],
+  [data-theme=preston] form [type="email"],
+  [data-theme=preston] form textarea {
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: none;
+  }
+  [data-theme=preston] form select:focus,
+  [data-theme=preston] form .split-input > input:focus,
+  [data-theme=preston] form .split-input > select:focus,
+  [data-theme=preston] form [type="text"]:focus,
+  [data-theme=preston] form [type="tel"]:focus,
+  [data-theme=preston] form [type^="cc-"]:focus,
+  [data-theme=preston] form [type="email"]:focus,
+  [data-theme=preston] form textarea:focus {
+    border-color: orange;
+    box-shadow: #fc0 0 0 3px;
+  }
+  @media (min-width: 600px) {
+    [data-theme=preston] main > p,
+    [data-theme=preston] main > ul li,
+    [data-theme=preston] main > ol li {
+      font-size: 14pt;
+    }
+  }
+  [data-modal] article {
+    padding: 1em;
+  }
+  
+  
+  </style>
+</head>
+<body>
+
+<div style='background-image:  url(/bg-daylight.jpg), url(./bg-daylight.jpg); height: 48px; width: 100%; position: absolute; top: 0px; left: 0px;'></div>
+
+<div id='container' data-theme="preston">
+<main>
+
+<div class='top-menu honey' style='position: absolute;top: -38px; left: 0px;'>
+    <p>
+      <a href='/gardening'>Gardening</a>
+
+      <a href='/community'>Community</a>
+
+      <a href='/health'>Health</a>
+
+      <a href='/food'>Food</a>
+
+      <a href='/crops'>Crops</a>
+
+      <a href='/permaculture'>Permaculture</a>
+    </p>
+</div>
+
+<div class="mist" style='position: relative;'>
+  <a href='/' style='text-decoration: none; font-weight: bold; font-size: 20pt; '>Echo Lake Research</a>
+
+    <div class='mist' style='font-size: 16px; position: absolute; bottom: 0px; right: 0px;'>
+      &nbsp;&nbsp;&nbsp;
+      <a href='/about' style='text-decoration: none;'>About</a>
+      &nbsp;&bullet;&nbsp;
+      <a href='/contact' style='text-decoration: none;'>Contact</a>
+    </div>
+</div>
+
+<hr class='mist' style='margin-bottom: 36px'>
+<p>The modern world is so busy it is hard to find time to breath, much less to garden, cook, wildcraft, or make medicine. Our Natural Living classes embrace that reality, and focus on giving you skills with the biggest bank for the buck. You will not only learn how to grow food, make medicine, but you’re learn to do it in ways that can actually help you save time and money while replenishing your energy!</p>
+<h3 id="invest-in-yourself-and-the-skills-you-gain-will-pay-you-back-many-times-over-and-help-you-lead-a-richer-life.">Invest in yourself, and the skills you gain will pay you back many times over and help you lead a richer life.</h3>
+<p>The classes in this program will help you shift your lifestyle away from modern busyness and towards the life that human beings are fit for - an embrace of deep community, health, and happiness in the home where we live.</p>
+<p>Food and medicine have always been central to community, and we can find all three of these growing in abundance in a wisely tended garden. Our approach uses natural patterns to help us design practical gardens that support the rich lives we are meant for.</p>
+<p>Contact <script type="text/javascript">
+<!--
+h='&#x65;&#x63;&#104;&#x6f;&#108;&#x61;&#x6b;&#x65;&#114;&#x65;&#x73;&#x65;&#x61;&#114;&#x63;&#104;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#106;&#x61;&#x73;&#x6f;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#106;&#x61;&#x73;&#x6f;&#110;&#32;&#x61;&#116;&#32;&#x65;&#x63;&#104;&#x6f;&#108;&#x61;&#x6b;&#x65;&#114;&#x65;&#x73;&#x65;&#x61;&#114;&#x63;&#104;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> to get updates about when events are offered or to inquire about private events.</p>
+<h3 id="some-of-the-topics-we-offer">Some of the topics we offer</h3>
+<ul>
+<li><strong>Learning sessions in the garden.</strong>The core of the program is a monthly learning session, following a program developed by the team at Lillie House. Each session includes guided conversations on a series of topics, and hands-on learning with the plants and animals that live in our homestead garden on Echo Lake Road. Scroll down a few sections for more information about the skills you will learn.</li>
+<li><strong>Foraging and medicinal wildcrafting walks</strong>. To help with broader exposure to patterns of nature and teach local foraging and medicinal wildcrafting we will have semi-regular forest walks that will be scheduled seasonally.</li>
+<li><strong>Garden fast food “recipes” for seasonal eating.</strong> One of the challenges of growing your own food is to incorporate it into your own personal cuisine. As the harvest proceeds through the seasonal cycles, you will learn simple cooking techniques and flexible recipes that will help you fit delicious garden-to-table eating into your lifestyle.</li>
+<li><strong>Growing, foraging, making and using natural medicine.</strong> You will learn how to grow and wildcraft some of the most important, widely useful and scientifically validated healing plants (and mushrooms!). You will learn how to transform your homemade food into powerful medicine, and to assemble a medicine cabinet of homemade items that integrates into your regular life… and how these medicines and the conventional medical system can fit together and complement each other.</li>
+<li><strong>Nature literacy.</strong> Everything we do relates to the natural world, because we live in and are part of the natural world. Throughout the program you will increasingly understand how ecosystems, physical systems, and social systems function. You’ll never walk through a forest, grassland, suburb or city the same way again! This appreciation is deeply meaningful on its own, but the secrets you learn aren’t just beautiful for their own sake. The holistic understanding you gain will help you to navigate the world as you live your life.</li>
+<li><strong>30 day challenge series.</strong> Our mission is to help you live better, and the skills you learn only matter when you put them into practice! We will help you build positive new habits and routines to support your changing our lifestyle. We will teach you the skills you need to complete a 30 day challenge that will solidify those skills into lifelong habits. With simple but profound daily practices like “food as medicine”, “5 minute mindful garden walk”, and “daily harvest habit” you will find yourself gently challenged while building a deep foundation of connection to the garden and the benefits that it offers.</li>
+</ul>
+<h3 id="dates-times-and-tuition">Dates, Times, and Tuition</h3>
+<p>Contact <script type="text/javascript">
+<!--
+h='&#x65;&#x63;&#104;&#x6f;&#108;&#x61;&#x6b;&#x65;&#114;&#x65;&#x73;&#x65;&#x61;&#114;&#x63;&#104;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#106;&#x61;&#x73;&#x6f;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#106;&#x61;&#x73;&#x6f;&#110;&#32;&#x61;&#116;&#32;&#x65;&#x63;&#104;&#x6f;&#108;&#x61;&#x6b;&#x65;&#114;&#x65;&#x73;&#x65;&#x61;&#114;&#x63;&#104;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> to get updates about when events are offered or to inquire about private events.</p>
+<p>Our 2-hour workshops and plant walks and workshops are offered on a sliding scale for $15-$40, and daylong intensives are offered on a sliding scale of $50-$200. We are offering this knowledge for the joy of it (and because it is important!) and we don’t want money to be a barrier. Your support is what enables us to share these skills, so contributing as you are able and as you value the knowledge is foundational for this work to continue.</p>
+<p>Don’t let money be a barrier! If you cannot afford the minimum tuition for an event, let us know and we will work something out. You can pay with a big hug and a kind word, a loaf of homemade bread, or you come help us for an hour or two in our gardens.</p>
+<h3 id="curriculum-and-resources">Curriculum and resources</h3>
+<p>Our program is closely modeled after work that has come out of Lillie House in Kalamazoo, Michigan. The regularly share inspiring and practical information on their <a href="https://lilliehouse.blogspot.com/">blog</a>, and they keep up a regular presence on <a href="https://www.instagram.com/lilliehousekzoo/">Instagram</a>and <a href="https://www.facebook.com/pg/Lillie-House-978392448898973/posts">Facebook</a>.</p>
+<p>During classes you will receive our own handouts and reference materials to support your learning, and we also encourage you read some of the books that have inspired and informed us.</p>
+<p>You can dive into the study of using natural patterns to live better by reading <a href="http://www.timberpress.com/books/practical_permaculture_home_landscapes_your_community_whole_earth/bloom/9781604694437">Practical Permaculture</a>by local authors Jessi Bloom and David Boehnlein, and the brilliant classic Gaia’s Garden by the late Toby Hemenway.</p>
+<p>We have been deeply inspired by Masanobu Fukuoka’s book <a href="https://www.nyrb.com/products/the-one-straw-revolution">One Straw Revolution</a>.</p>
+</main>
+</div>
+
+<div style='background-image: url(/bg-moss.jpg), url(./bg-moss.jpg); height: 300px; width: 100%;'></div>
+</body>
+</html>

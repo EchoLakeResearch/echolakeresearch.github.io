@@ -61,21 +61,25 @@ html {
   font-weight: 400;
   min-height: 100%;
   -webkit-text-size-adjust: 100%;
-  background-image: url(/ricepaper-texture.png);
-  background-attachment: fixed;
-  background-repeat: repeat-y repeat-x;
+  background: #fefff6;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+#container {
+  position: relative;
   margin: 0 auto;
   max-width: 910px;
   min-height: 100%;
   padding: 5em;
-  padding-top: 60px;
+  padding-top: 24px;
   box-shadow: #d2d2d2 0px 0px 48px;
-  margin-top: 36px;
-  background-image: url(/bg-daylight.jpg);
-  background-repeat: no-repeat;
+  margin-top: 132px;
+  margin-bottom: 84px;
+  background: white;
 }
 q:before {content: '\201c'}
 q:after  {content: '\201d'}

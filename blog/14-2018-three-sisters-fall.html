@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type='text/css'>
+  /*
+  # The Mad CSScientist's Basic CSS Stylesheet
+  written by Tommy Hodgins: https://gist.github.com/tomhodgins/e330ec1826d1cde2b8b0
+  ## Usage
+  Add this stylesheet to barebones HTML documents to instantly add some sensible defaults for text or documentation
+      <link href=http://staticresource.com/basic.css rel=stylesheet>
+  This stylesheet contains multiple themes. To apply a theme add the attribute `data-theme` with the value `book`, `dark`, or `code` to the HTML tag.
+      <html data-theme=dark>
+  */
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    outline: none;
+  }
+  ::-moz-selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::-webkit-selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::-webkit-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :-moz-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  ::-moz-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :-ms-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  ::-ms-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :placeholder-shown {
+    color: rgba(0,0,0,.5);
+  }
+  html {
+    color: #333;
+    font-size: 14pt;
+    line-height: 1.4;
+    font-weight: 400;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #fefff6;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+  #container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 910px;
+    min-height: 100%;
+    padding: 5em;
+    padding-top: 24px;
+    box-shadow: #d2d2d2 0px 0px 48px;
+    margin-top: 132px;
+    margin-bottom: 84px;
+    background: white;
+  }
+  q:before {content: '\201c'}
+  q:after  {content: '\201d'}
+  q q:before {content: '\2018'}
+  q q:after  {content: '\2019'}
+  h1!important, h2!important, h3!important, h4!important, h5!important, h6!important {
+    color: #555;
+    margin: .5em 0;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-break: break-word;
+  }
+  .mist {
+    color: #7A9D96!important;
+  }
+  .green {
+    color: #5A6029!important;
+  }
+  .honey {
+    color: #987859!important; /*#DCAE1D!important;  #ad7837 */
+  }
+  .sky {
+    color: #CAE4DB!important;
+  }
+  .blue {
+    color: #00303F!important;
+  }
+  .top-menu {
+    position: relative;
+    display: inline-block;
+  }
+  .top-menu p a {
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .top-menu p a:first-child {
+    padding-left: 0px;
+  }
+  
+  .top-menu p a:last-child {
+    padding-right: 0px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: left;
+    font-size: 180%;
+    font-weight: 500;
+    line-height: 1;
+    text-shadow: white 0 -1px 0;
+  }
+  h1 + h2 {
+    color: #777!important;
+    margin-top: -1em;
+    font-size: 150%;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: left;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  h3 {
+    font-size: 130%;
+  }
+  h4 {
+    font-size: 115%;
+  }
+  h5 {
+    font-size: 100%;
+  }
+  h6 {
+    font-size: 100%;
+  }
+  a {
+    color: inherit;
+    outline: none !important;
+  }
+  a:hover,
+  a:focus {
+    color: #DCAE1D;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+  }
+  *:not(pre) > code {
+    color: #333;
+    background: #def;
+    display: inline-block;
+    line-height: 1.3;
+    padding: 0 .3em;
+    margin: 0 .15em;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,.1) 0 1px 0;
+    font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  *:not(pre) > code a {
+    color: indigo;
+  }
+  pre {
+    color: #839496;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0 2em 0;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+    word-break: break-word;
+    white-space: pre-wrap;
+    font-kerning: auto;
+    background: #002b36;
+    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: inset rgba(0,0,0,.075) 0 -3px 10px,
+                inset rgba(255,255,255,.15) 0 1px 0,
+                rgba(0,0,0,.3) 0 1px .5px,
+                rgba(0,0,0,.15) 0 3px 5px;
+  }
+  li {
+    font-size: 12pt;
+    padding: .25em 0;
+  }
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12pt;
+  }
+  * + p {
+    margin-top: .5em;
+  }
+  input:not([type=checkbox]):not([type=radio]),
+  textarea {
+    width: 100%;
+    font-size: 12pt;
+    margin-bottom: 1em;
+    padding: 10px 8px;
+  }
+  blockquote {
+    color: #777;
+    margin: 1em auto 0 auto;
+    padding: 1em 2em;
+    position: relative;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  blockquote:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: currentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+  }
+  blockquote p {
+    color: #333;
+    font-size: 250%;
+    font-weight: 500;
+    font-style: italic;
+  }
+  blockquote footer {
+    margin-top: .5em;
+    padding: 0;
+    color: currentColor;
+    font-size: 125%;
+    text-align: left;
+  }
+  blockquote footer:before {
+    content: '— ';
+  }
+  footer {
+    color: #777;
+    font-size: 11pt;
+    text-align: center;
+    padding: 2em .5em;
+  }
+  table td {
+    width: 45%;
+    vertical-align: top;
+  }
+  table td:nth-child(2) {
+    width: 10%;
+  }
+  img {
+    margin-bottom: 12px;
+  }
+  a,
+  input,
+  textarea,
+  button,
+  label,
+  iframe,
+  audio,
+  video {
+    touch-action: manipulation;
+  }
+  [class*="float-"] {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+  }
+  [data-tooltip][class*="float-"]{
+    pointer-events: all;
+  }
+  @media (min-width: 500px) {
+    .float-left {
+      float: left;
+      margin: 0 .5em .5em 0;
+      max-width: 50%;
+    }
+    .float-right {
+      float: right;
+      margin: 0 0 .5em .5em;
+      max-width: 50%;
+    }
+  }
+  
+  /* Preston Theme */
+  [data-theme=preston] p,
+  [data-theme=preston] td {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  }
+  [data-theme=preston],
+  [data-theme=preston] body {
+    background-color: white;
+  }
+  [data-theme=preston] h1,
+  [data-theme=preston] h2,
+  [data-theme=preston] h3,
+  [data-theme=preston] h4,
+  [data-theme=preston] h5,
+  [data-theme=preston] h6 {
+    font-weight: 500;
+    color: #111;
+    text-shadow: none;
+  }
+  [data-theme=preston] main > p,
+  [data-theme=preston] main > ul li,
+  [data-theme=preston] main > ol li {
+    font-size: 12pt;
+    line-height: 1.7;
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  }
+  [data-theme=preston] main > p + p {
+    margin-top: 1em;
+  }
+  [data-theme=preston] blockquote p,
+  [data-theme=preston] blockquote q {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    font-weight: 300;
+  }
+  [data-theme=preston] blockquote cite,
+  [data-theme=preston] blockquote footer {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    font-weight: 700;
+  }
+  [data-theme=preston] form select,
+  [data-theme=preston] form .split-input > input,
+  [data-theme=preston] form .split-input > select,
+  [data-theme=preston] form [type="text"],
+  [data-theme=preston] form [type="tel"],
+  [data-theme=preston] form [type^="cc-"],
+  [data-theme=preston] form [type="email"],
+  [data-theme=preston] form textarea {
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: none;
+  }
+  [data-theme=preston] form select:focus,
+  [data-theme=preston] form .split-input > input:focus,
+  [data-theme=preston] form .split-input > select:focus,
+  [data-theme=preston] form [type="text"]:focus,
+  [data-theme=preston] form [type="tel"]:focus,
+  [data-theme=preston] form [type^="cc-"]:focus,
+  [data-theme=preston] form [type="email"]:focus,
+  [data-theme=preston] form textarea:focus {
+    border-color: orange;
+    box-shadow: #fc0 0 0 3px;
+  }
+  @media (min-width: 600px) {
+    [data-theme=preston] main > p,
+    [data-theme=preston] main > ul li,
+    [data-theme=preston] main > ol li {
+      font-size: 14pt;
+    }
+  }
+  [data-modal] article {
+    padding: 1em;
+  }
+  
+  
+  </style>
+</head>
+<body>
+
+<div style='background-image:  url(/bg-daylight.jpg), url(./bg-daylight.jpg); height: 48px; width: 100%; position: absolute; top: 0px; left: 0px;'></div>
+
+<div id='container' data-theme="preston">
+<main>
+
+<div class='top-menu honey' style='position: absolute;top: -38px; left: 0px;'>
+    <p>
+      <a href='/gardening'>Gardening</a>
+
+      <a href='/community'>Community</a>
+
+      <a href='/health'>Health</a>
+
+      <a href='/food'>Food</a>
+
+      <a href='/crops'>Crops</a>
+
+      <a href='/permaculture'>Permaculture</a>
+    </p>
+</div>
+
+<div class="mist" style='position: relative;'>
+  <a href='/' style='text-decoration: none; font-weight: bold; font-size: 20pt; '>Echo Lake Research</a>
+
+    <div class='mist' style='font-size: 16px; position: absolute; bottom: 0px; right: 0px;'>
+      &nbsp;&nbsp;&nbsp;
+      <a href='/about' style='text-decoration: none;'>About</a>
+      &nbsp;&bullet;&nbsp;
+      <a href='/contact' style='text-decoration: none;'>Contact</a>
+    </div>
+</div>
+
+<hr class='mist' style='margin-bottom: 36px'>
+<p>Title: Meadow Polyculture: lessons from abundance in neglect. Date: 2018-09-07 10:00 Author: jpadvo Category: Uncategorized Slug: 240 Status: draft</p>
+<p>Previous post here:</p>
+<p>It’s been a looong time since the last post - our family has had a tough year. We lost a loved one after a roughly yearlong battle with cancer, and for the most part our gardens have had to take care of themselves. This isn’t our first challenging year as a family, so over time we have made our gardening more and more resilient. We don’t want the garden to need our constant attention, because we know we don’t always have it to give.</p>
+<p>This polyculture was planted in an area of our garden that we don’t water except for a day or two after sowing seeds, to ensure germination. We have been developing the soil for the last 3 years, and it is so deep and rich that it holds ample water. Even though we get almost no rain during the summer, the crops we grow in this area do just fine. So lack of watering was a non-issue.</p>
+<p>But… this particular style of planting normally does rely on regular maintenance in the form of thinning. In case you didn’t read the last post, the idea is to densely scatter a diverse blend of seeds on a patch. Early yielding crops like radishes get harvested early, which doubles as thinning to give more space to the other plants. But if the garden is planted at high density, and not thinned… what happens?</p>
+<p>March of the radishes<br />The most obvious thing that happens is that you get a ton of radishes going to seed! This is of course not surprising, because their large seeds and quick growth habit gives them a fast start to steal all the sunlight for themselves. I didn’t weigh it, but by the time I got around to harvesting the greens and seedpods to feed the chickens it was probably 40 pounds of fibrous stems, pods, and leaves. Yikes!</p>
+<p>Natural thinning<br />Well, it isn’t exactly accurate to say that the garden was not thinned. It was not thinned by *us*, but it was thinned by slugs and other inhabitants. One section of the planting had most of the radishes mown down by hungry slugs. It is a mystery why the left the other seedlings, and why they only attacked the radishes in that part of the bed. But the result was that where they had thinned, other eager risers had a chance to shine.</p>
+<p>We had ENORMOUS bok choi heads come in. These were spring planted, but managed to make it all the way through summer with zero water without bolting! The radishes that did grow between them helped keep them cool, and the seed we used from Joseph Lofthouse was fantastic.</p>
+<p>The other big winner in that area was a perennial kale plant from Chris Homanics’s homesteader kaleidoscope grex.</p>
+<p>Seedlings in wait<br />After clearing out the radishes, we discovered many other seedlings that had sprouted, then paused when they were shaded out by the radishes. Some things died, but there was still a lot of lettuce, chard, carrots and scattered other things. The lettuce has started sizing up nicely, and the chard and carrots are either permanently stunted or will start popping a little more once we get the fall rains.</p>
+<p>It is fascinating that such tiny little seedlings were able to survive a long, dry summer with absolutely zero water. If these were planted in nursery flats they would be dead in days without water. But the gentle shade and moisture from growing surrounded by other plants and the canopy of radish greens gave them what they need. And despite the fact that they are small above the surface, apparently their roots were still reaching deep or they would have wilted and died immediately when we removed the radish cover.</p>
+<p>Results?<br />I had assumed that the radishes would have smothered and killed everything under them, and that there would be little or nothing else for us in the bed aside of the very visible bok choi. But diverse assemblies of living things are resilient, in ways that can easily surpass our ability to predict or understand. The plants, the insects, and the soil microbiology worked together to keep maximum life thriving.</p>
+<p>Without human guidance in this bed, most of the productivity went to biomass that we can’t eat. But with minimal intervention, we have guided the bed to shift into producing almost entirely food for us. With annuals like this the shifts are quick - lack of maintenance almost immediately resulted in cessation of food production, and resumption of maintenance almost immediately brought food production back.</p>
+<p>That is the wonderful thing about annuals - they can be brought online fast to get food rolling out of the garden.</p>
+<p>The wonderful thing about naturally patterned perennial systems is that once they start rolling, the food keeps coming with much less constant intervention required to keep it rocking.</p>
+<p>…and the best is when integrating annual with perennial systems, so you get food right away and less and less maintenance in the future!</p>
+<p>This polyculture patch is planted along a hedgerow line that we just began planting this year. We won’t be getting food from the trees and shrubs for years to come, but immediately we were getting food from that land.</p>
+</main>
+</div>
+
+<div style='background-image: url(/bg-moss.jpg), url(./bg-moss.jpg); height: 300px; width: 100%;'></div>
+</body>
+</html>

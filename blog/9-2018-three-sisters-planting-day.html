@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type='text/css'>
+  /*
+  # The Mad CSScientist's Basic CSS Stylesheet
+  written by Tommy Hodgins: https://gist.github.com/tomhodgins/e330ec1826d1cde2b8b0
+  ## Usage
+  Add this stylesheet to barebones HTML documents to instantly add some sensible defaults for text or documentation
+      <link href=http://staticresource.com/basic.css rel=stylesheet>
+  This stylesheet contains multiple themes. To apply a theme add the attribute `data-theme` with the value `book`, `dark`, or `code` to the HTML tag.
+      <html data-theme=dark>
+  */
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    outline: none;
+  }
+  ::-moz-selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::-webkit-selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::selection {
+    color: #fff;
+    text-shadow: #007931 1px 1px 1px;
+    background-color: #26ba62 !important;
+  }
+  ::-webkit-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :-moz-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  ::-moz-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :-ms-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  ::-ms-input-placeholder {
+    color: rgba(0,0,0,.5);
+  }
+  :placeholder-shown {
+    color: rgba(0,0,0,.5);
+  }
+  html {
+    color: #333;
+    font-size: 14pt;
+    line-height: 1.4;
+    font-weight: 400;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #fefff6;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+  #container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 910px;
+    min-height: 100%;
+    padding: 5em;
+    padding-top: 24px;
+    box-shadow: #d2d2d2 0px 0px 48px;
+    margin-top: 132px;
+    margin-bottom: 84px;
+    background: white;
+  }
+  q:before {content: '\201c'}
+  q:after  {content: '\201d'}
+  q q:before {content: '\2018'}
+  q q:after  {content: '\2019'}
+  h1!important, h2!important, h3!important, h4!important, h5!important, h6!important {
+    color: #555;
+    margin: .5em 0;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-break: break-word;
+  }
+  .mist {
+    color: #7A9D96!important;
+  }
+  .green {
+    color: #5A6029!important;
+  }
+  .honey {
+    color: #987859!important; /*#DCAE1D!important;  #ad7837 */
+  }
+  .sky {
+    color: #CAE4DB!important;
+  }
+  .blue {
+    color: #00303F!important;
+  }
+  .top-menu {
+    position: relative;
+    display: inline-block;
+  }
+  .top-menu p a {
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .top-menu p a:first-child {
+    padding-left: 0px;
+  }
+  
+  .top-menu p a:last-child {
+    padding-right: 0px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: left;
+    font-size: 180%;
+    font-weight: 500;
+    line-height: 1;
+    text-shadow: white 0 -1px 0;
+  }
+  h1 + h2 {
+    color: #777!important;
+    margin-top: -1em;
+    font-size: 150%;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: left;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  h3 {
+    font-size: 130%;
+  }
+  h4 {
+    font-size: 115%;
+  }
+  h5 {
+    font-size: 100%;
+  }
+  h6 {
+    font-size: 100%;
+  }
+  a {
+    color: inherit;
+    outline: none !important;
+  }
+  a:hover,
+  a:focus {
+    color: #DCAE1D;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+  }
+  *:not(pre) > code {
+    color: #333;
+    background: #def;
+    display: inline-block;
+    line-height: 1.3;
+    padding: 0 .3em;
+    margin: 0 .15em;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,.1) 0 1px 0;
+    font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  *:not(pre) > code a {
+    color: indigo;
+  }
+  pre {
+    color: #839496;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0 2em 0;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+    word-break: break-word;
+    white-space: pre-wrap;
+    font-kerning: auto;
+    background: #002b36;
+    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: inset rgba(0,0,0,.075) 0 -3px 10px,
+                inset rgba(255,255,255,.15) 0 1px 0,
+                rgba(0,0,0,.3) 0 1px .5px,
+                rgba(0,0,0,.15) 0 3px 5px;
+  }
+  li {
+    font-size: 12pt;
+    padding: .25em 0;
+  }
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12pt;
+  }
+  * + p {
+    margin-top: .5em;
+  }
+  input:not([type=checkbox]):not([type=radio]),
+  textarea {
+    width: 100%;
+    font-size: 12pt;
+    margin-bottom: 1em;
+    padding: 10px 8px;
+  }
+  blockquote {
+    color: #777;
+    margin: 1em auto 0 auto;
+    padding: 1em 2em;
+    position: relative;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  blockquote:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: currentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+  }
+  blockquote p {
+    color: #333;
+    font-size: 250%;
+    font-weight: 500;
+    font-style: italic;
+  }
+  blockquote footer {
+    margin-top: .5em;
+    padding: 0;
+    color: currentColor;
+    font-size: 125%;
+    text-align: left;
+  }
+  blockquote footer:before {
+    content: '— ';
+  }
+  footer {
+    color: #777;
+    font-size: 11pt;
+    text-align: center;
+    padding: 2em .5em;
+  }
+  table td {
+    width: 45%;
+    vertical-align: top;
+  }
+  table td:nth-child(2) {
+    width: 10%;
+  }
+  img {
+    margin-bottom: 12px;
+  }
+  a,
+  input,
+  textarea,
+  button,
+  label,
+  iframe,
+  audio,
+  video {
+    touch-action: manipulation;
+  }
+  [class*="float-"] {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+  }
+  [data-tooltip][class*="float-"]{
+    pointer-events: all;
+  }
+  @media (min-width: 500px) {
+    .float-left {
+      float: left;
+      margin: 0 .5em .5em 0;
+      max-width: 50%;
+    }
+    .float-right {
+      float: right;
+      margin: 0 0 .5em .5em;
+      max-width: 50%;
+    }
+  }
+  
+  /* Preston Theme */
+  [data-theme=preston] p,
+  [data-theme=preston] td {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  }
+  [data-theme=preston],
+  [data-theme=preston] body {
+    background-color: white;
+  }
+  [data-theme=preston] h1,
+  [data-theme=preston] h2,
+  [data-theme=preston] h3,
+  [data-theme=preston] h4,
+  [data-theme=preston] h5,
+  [data-theme=preston] h6 {
+    font-weight: 500;
+    color: #111;
+    text-shadow: none;
+  }
+  [data-theme=preston] main > p,
+  [data-theme=preston] main > ul li,
+  [data-theme=preston] main > ol li {
+    font-size: 12pt;
+    line-height: 1.7;
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  }
+  [data-theme=preston] main > p + p {
+    margin-top: 1em;
+  }
+  [data-theme=preston] blockquote p,
+  [data-theme=preston] blockquote q {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    font-weight: 300;
+  }
+  [data-theme=preston] blockquote cite,
+  [data-theme=preston] blockquote footer {
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+    font-weight: 700;
+  }
+  [data-theme=preston] form select,
+  [data-theme=preston] form .split-input > input,
+  [data-theme=preston] form .split-input > select,
+  [data-theme=preston] form [type="text"],
+  [data-theme=preston] form [type="tel"],
+  [data-theme=preston] form [type^="cc-"],
+  [data-theme=preston] form [type="email"],
+  [data-theme=preston] form textarea {
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: none;
+  }
+  [data-theme=preston] form select:focus,
+  [data-theme=preston] form .split-input > input:focus,
+  [data-theme=preston] form .split-input > select:focus,
+  [data-theme=preston] form [type="text"]:focus,
+  [data-theme=preston] form [type="tel"]:focus,
+  [data-theme=preston] form [type^="cc-"]:focus,
+  [data-theme=preston] form [type="email"]:focus,
+  [data-theme=preston] form textarea:focus {
+    border-color: orange;
+    box-shadow: #fc0 0 0 3px;
+  }
+  @media (min-width: 600px) {
+    [data-theme=preston] main > p,
+    [data-theme=preston] main > ul li,
+    [data-theme=preston] main > ol li {
+      font-size: 14pt;
+    }
+  }
+  [data-modal] article {
+    padding: 1em;
+  }
+  
+  
+  </style>
+</head>
+<body>
+
+<div style='background-image:  url(/bg-daylight.jpg), url(./bg-daylight.jpg); height: 48px; width: 100%; position: absolute; top: 0px; left: 0px;'></div>
+
+<div id='container' data-theme="preston">
+<main>
+
+<div class='top-menu honey' style='position: absolute;top: -38px; left: 0px;'>
+    <p>
+      <a href='/gardening'>Gardening</a>
+
+      <a href='/community'>Community</a>
+
+      <a href='/health'>Health</a>
+
+      <a href='/food'>Food</a>
+
+      <a href='/crops'>Crops</a>
+
+      <a href='/permaculture'>Permaculture</a>
+    </p>
+</div>
+
+<div class="mist" style='position: relative;'>
+  <a href='/' style='text-decoration: none; font-weight: bold; font-size: 20pt; '>Echo Lake Research</a>
+
+    <div class='mist' style='font-size: 16px; position: absolute; bottom: 0px; right: 0px;'>
+      &nbsp;&nbsp;&nbsp;
+      <a href='/about' style='text-decoration: none;'>About</a>
+      &nbsp;&bullet;&nbsp;
+      <a href='/contact' style='text-decoration: none;'>Contact</a>
+    </div>
+</div>
+
+<hr class='mist' style='margin-bottom: 36px'>
+<p>Today we planted the 113 mounds in the three sisters patch that we are growing with <a href="https://www.facebook.com/rainysundayranch/?fref=mentions&amp;__xts__%5B0%5D=68.ARAVT8JvBXBbjnN3h7ZRfEUbQYGIbKG_UiRpBcKJ5a8N0Xk21MuYiHLhzk4AqDTJjlu01pbGJ_RmtbuCLD2I2zYw4LDKBhOC25mTBqdGFGQp9raNB3cBvHvC-yY9jz5Wa-UO5HHDRs8z&amp;__tn__=K-R">Rainysunday Ranch</a> at <a href="https://www.facebook.com/ScottishThistleFarm/?fref=mentions&amp;__xts__%5B0%5D=68.ARAVT8JvBXBbjnN3h7ZRfEUbQYGIbKG_UiRpBcKJ5a8N0Xk21MuYiHLhzk4AqDTJjlu01pbGJ_RmtbuCLD2I2zYw4LDKBhOC25mTBqdGFGQp9raNB3cBvHvC-yY9jz5Wa-UO5HHDRs8z&amp;__tn__=K-R">Scottish Thistle Farm</a>! That was a lot of seeds.</p>
+<p>Next post in this series: <a href="https://www.echolakeresearch.org/2018/06/13/2018-three-sisters-germination/">2018 three sisters: germination!</a></p>
+<p>[caption id=“attachment_191” align=“alignnone” width=“1200”]<img src="./uploads/2018/08/33120347_10156343121331992_8023338585006538752_o.jpg" /> Preparing for a three sisters planting. The little munchkins are helping make the slashmulch piles, which we will top with a little compost and plant directly into.[/caption]</p>
+<p>This is a slashmulch system. The existing vegetation was mowed, then we gathered it into mounds that are deep enough to smother the vegetation underneath. Ideally, this happens a month before planting so the corn/bean/squash seeds go into a fairly decomposed mulch. If necessary the areas between mounds can be mowed once or twice while the squash spreads out.</p>
+<p>The mulch provides weed control, helps keep the soil moist, fosters soil food web activity that softens the soil… and provides a kick of nitrogen for the heavy feeding corn and squash. And the beans, of course, fix nitrogen to replenish whatever is going away, along with any leguminous plants that are growing as “weeds” between the mounds.</p>
+<p>Smaller seeded crops can be planted by making slashmulch mounds/beds, and then raking the mulch away once the underlying weeds are dead (or mostly dead).</p>
+<h1 id="what-did-we-plant">What did we plant?</h1>
+<p>Cascade Ruby Gold corn is the soul, and is the only corn variety in this patch.</p>
+<p>We planted 35 kinds of squash, anchored with a dozen and a half mounds each of Nanticoke landrace from the <a href="https://www.facebook.com/ExperimentalFarmNetwork/?fref=mentions&amp;__xts__%5B0%5D=68.ARAVT8JvBXBbjnN3h7ZRfEUbQYGIbKG_UiRpBcKJ5a8N0Xk21MuYiHLhzk4AqDTJjlu01pbGJ_RmtbuCLD2I2zYw4LDKBhOC25mTBqdGFGQp9raNB3cBvHvC-yY9jz5Wa-UO5HHDRs8z&amp;__tn__=K-R">Experimental Farm Network</a> and Goldini zucchini gifted by Charlotte Anthony, 4 mounds each of cinderella, bushel basket go<span class="text_exposed_show">urds, and two varieties of hulless pumpkins for pepitas.</span></p>
+<div class="text_exposed_show">
+<p>We planted 6 varieties of beans, anchored with ~60 mounds of Pellegrini beans saved by Cody Lee Johansen of Rainysunday Ranch last year, and ~20 mounds of White Half Runner beans recommended by <a href="https://www.facebook.com/profile.php?id=100004176543395&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARAVT8JvBXBbjnN3h7ZRfEUbQYGIbKG_UiRpBcKJ5a8N0Xk21MuYiHLhzk4AqDTJjlu01pbGJ_RmtbuCLD2I2zYw4LDKBhOC25mTBqdGFGQp9raNB3cBvHvC-yY9jz5Wa-UO5HHDRs8z&amp;__tn__=K-R">Timothy Kercheville</a>.</p>
+<p>Thanks to Jody Kerr for use of this field, and to <a href="https://www.facebook.com/profile.php?id=100010704363250&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARAVT8JvBXBbjnN3h7ZRfEUbQYGIbKG_UiRpBcKJ5a8N0Xk21MuYiHLhzk4AqDTJjlu01pbGJ_RmtbuCLD2I2zYw4LDKBhOC25mTBqdGFGQp9raNB3cBvHvC-yY9jz5Wa-UO5HHDRs8z&amp;__tn__=K-R">Mike Hoag</a> for the information he has been sharing about their slashmulch plantings, and the coaching and questions answered.</p>
+<p>And thanks Dad for helping to put the seeds in the ground and keep the kids happy!</p>
+<h1>What do we hope to accomplish?</h1>
+<p>Part of this is a variety trial to see which squash can survive whatever kinds of pest pressure exist in this context! Also, with two squash planted for *every* mound, we are going to have *tons* of squash. If 3/4 of them get obliterated, we’ll probably still have plenty.</p>
+<p>Next year we’ll probably plant the squash less densely, but this year part of the deal is to let them duke it out, and also to get as much coverage over the reed canary grass as possible, as fast as possible so that we don’t have to mow between the mounds too much.</p>
+<h1>More info</h1>
+<p>Mike Hoag has a neat instagram gallery showing their slashmulch plantings:</p>
+<p>[embed]https://www.instagram.com/p/BftOvSGhZ24/[/embed]</p>
+<p> </p>
+</div>
+</main>
+</div>
+
+<div style='background-image: url(/bg-moss.jpg), url(./bg-moss.jpg); height: 300px; width: 100%;'></div>
+</body>
+</html>
