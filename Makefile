@@ -9,3 +9,6 @@ all: $(HTML)
 %.html: %.md
 
 		pandoc -s -S --template=_template.txt --include-in-header=_style.css --from markdown --to html  $< -o $@
+
+clean:
+		$(shell find . -name "*.html" -type f -delete)
