@@ -4,28 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
+  <link rel="stylesheet" type="text/css" href="/0-style.css">
+
 $for(author-meta)$
   <meta name="author" content="$author-meta$" />
 $endfor$
-$if(date-meta)$
-  <meta name="date" content="$date-meta$" />
-$endif$
   <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
-$if(quotes)$
-  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
-$endif$
-$if(highlighting-css)$
-  <style type="text/css">
-$highlighting-css$
-  </style>
-$endif$
 $for(css)$
   <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
 $endfor$
-$if(math)$
-  $math$
-$endif$
+
 $for(header-includes)$
   $header-includes$
 $endfor$
@@ -39,7 +27,7 @@ $endfor$
 
 <div class='top-menu honey' style='position: absolute;top: -41px; left: 0px;'>
     <p>
-      <a href='/gardening'>Gardening</a>
+      <a href='/garden'>Garden</a>
 
       <a href='/community'>Community</a>
 
@@ -47,7 +35,7 @@ $endfor$
 
       <a href='/food'>Food</a>
 
-      <a href='/crops'>Crops</a>
+      <a href='/habitat'>Habitat</a>
 
       <a href='/permaculture'>Permaculture</a>
     </p>
@@ -95,5 +83,14 @@ $endfor$
 </div>
 
 <div style='background-image: url(/bg-moss.jpg), url(./bg-moss.jpg), url(../bg-moss.jpg), url(../../bg-moss.jpg); height: 300px; width: 100%;'></div>
+
+<script type="text/javascript">
+if( ! document.location.host ) {
+document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="0-style.css" /%3E'));
+document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="../0-style.css" /%3E'));
+document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="../../0-style.css" /%3E'));
+document.write(unescape('%3Clink rel="stylesheet" type="text/css" href="../../../0-style.css" /%3E'));
+}
+</script>
 </body>
 </html>

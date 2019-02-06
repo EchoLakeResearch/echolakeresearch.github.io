@@ -162,7 +162,12 @@ h6 {
 a {
   color: inherit;
   outline: none !important;
+  background: #e9f965;
 }
+.honey > a, .mist > a {
+  background: inherit;
+}
+
 a:hover,
 a:focus {
   color: #DCAE1D;
@@ -215,6 +220,7 @@ p {
   margin: 0;
   font-weight: 400;
   font-size: 12pt;
+  max-width: 700px;
 }
 * + p {
   margin-top: .5em;
@@ -318,7 +324,7 @@ video {
 /* Preston Theme */
 [data-theme=preston] p,
 [data-theme=preston] td {
-  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 [data-theme=preston],
 [data-theme=preston] body {
@@ -339,19 +345,19 @@ video {
 [data-theme=preston] main > ol li {
   font-size: 12pt;
   line-height: 1.7;
-  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 [data-theme=preston] main > p + p {
   margin-top: 1em;
 }
 [data-theme=preston] blockquote p,
 [data-theme=preston] blockquote q {
-  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
 }
 [data-theme=preston] blockquote cite,
 [data-theme=preston] blockquote footer {
-  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 [data-theme=preston] form select,
