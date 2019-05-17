@@ -4,7 +4,7 @@ Our mission is to help people in our local community find better food, stronger 
 
 ## Our Story
 
-Echo Lake Research started in 2017 as a small market garden, and quickly transformed into a broader community development effort. It is a project mostly of Jason Padvorac, with support from Meggan Padvorac and our two daughters. We are located near Maltby, Washington, and are working to strengthen and localize the community in our neighborhood.
+JM Padvorac Farm started in 2017 as a small family market garden, and quickly transformed into a broader community development effort centered on home scale gardening and farming. We are located near Maltby, Washington, and are working to strengthen and localize the community in our neighborhood.
 
 Jason grew up with an organic vegetable garden in the backyard, and always loved exploring in the wilderness. Wanting to use his fascination with living systems to serve humanity, he earned a BS in Biomedical Engineering from the University of Washington. He gradually realized that the most accessible wins for human health and happiness were not in advanced medical research, but in simple changes of life practice. Time spent with indigenous Karen people in Thailand was a transformative experience that helped him see how much richer community should be than we are used to here.
 

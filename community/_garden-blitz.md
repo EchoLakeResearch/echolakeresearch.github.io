@@ -17,3 +17,4 @@ Great! We would love to help you with your garden blitz for free. Contact jason@
 # I want to attend a garden blitz!
 
 Wonderful! Attending a garden blitz is a fantastic way to build connection to your community and learn practical gardening skills. Email [jason@echolakeresearch.org](mailto:jason@echolakeresearch.org)to get updates.
+

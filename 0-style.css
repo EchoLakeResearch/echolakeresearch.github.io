@@ -1,4 +1,21 @@
 <style type='text/css'>
+
+/*
+* grid from http://chrisnager.com/ungrid/
+* Need specific column widths?
+* Go for it. Both fixed and percentage base widths work perfectly. You can even use them together. The
+* remaining columns will take up the rest of the available space. */
+@media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
+}
+
+/*
+* for responsive images, go here:
+* https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431
+*/
+
+
 /*
 # The Mad CSScientist's Basic CSS Stylesheet
 written by Tommy Hodgins: https://gist.github.com/tomhodgins/e330ec1826d1cde2b8b0
@@ -72,14 +89,16 @@ body {
 #container {
   position: relative;
   margin: 0 auto;
-  max-width: 910px;
+  max-width: 1096px;
   min-height: 100%;
   padding: 5em;
   padding-top: 24px;
   box-shadow: #d2d2d2 0px 0px 48px;
-  margin-top: 119px;
   margin-bottom: 84px;
   background: white;
+}
+main {
+  max-width: 700px;
 }
 q:before {content: '\201c'}
 q:after  {content: '\201d'}
@@ -111,7 +130,7 @@ h1!important, h2!important, h3!important, h4!important, h5!important, h6!importa
 }
 .top-menu {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .top-menu p a {
   font-size: 1.3em;
@@ -128,6 +147,14 @@ h1!important, h2!important, h3!important, h4!important, h5!important, h6!importa
   padding-right: 0px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 2em;
+}
+
+#header > h1 {
+  margin-top: 1em;
+}
+
 h1 {
   color: #333;
   text-align: left;
@@ -135,6 +162,7 @@ h1 {
   font-weight: 500;
   line-height: 1;
   text-shadow: white 0 -1px 0;
+  border-bottom: solid 3px #ccc;
 }
 h1 + h2 {
   color: #777!important;
@@ -162,10 +190,6 @@ h6 {
 a {
   color: inherit;
   outline: none !important;
-  background: #e9f965;
-}
-.honey > a, .mist > a {
-  background: inherit;
 }
 
 a:hover,
@@ -220,7 +244,6 @@ p {
   margin: 0;
   font-weight: 400;
   font-size: 12pt;
-  max-width: 700px;
 }
 * + p {
   margin-top: .5em;
@@ -281,6 +304,10 @@ table td:nth-child(2) {
 }
 img {
   margin-bottom: 12px;
+  width: 100%;
+}
+.caption {
+  display: none;
 }
 a,
 input,
