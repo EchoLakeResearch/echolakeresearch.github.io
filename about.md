@@ -2,15 +2,15 @@
 
 Our mission is to help people in our local community find better food, stronger community, and more resilient living by connecting together, and by connecting to this place we call home.
 
-## Our Story
-
 JM Padvorac Farm started in 2017 as a small family market garden, and quickly transformed into a broader community development effort centered on home scale gardening and farming. We are located near Maltby, Washington, and are working to strengthen and localize the community in our neighborhood.
 
-Jason grew up with an organic vegetable garden in the backyard, and always loved exploring in the wilderness. Wanting to use his fascination with living systems to serve humanity, he earned a BS in Biomedical Engineering from the University of Washington. He gradually realized that the most accessible wins for human health and happiness were not in advanced medical research, but in simple changes of life practice. Time spent with indigenous Karen people in Thailand was a transformative experience that helped him see how much richer community should be than we are used to here.
+Jason grew up with an organic vegetable garden in the backyard, and always loved exploring in the wilderness. Wanting to use his fascination with living systems to serve humanity, he earned a BS in Biomedical Engineering from the University of Washington. He gradually realized that the most accessible wins for human health and happiness were not in advanced medical research, but in simple changes of life practice. Meggan has always loved animals, and has filled our yard with the barnyard chatter of beloved ducks, chickens and quail. She has worked as a teacher at the grade school and college level, and does the bulk of the homeschooling of our young daughters.
 
-While paying the bills as a web developer, he has used his scientific and engineering skills in searching out the most practical, impactful ways that we can retrofit our modern lives, right here and now. A major source of inspiration and useful tools have come from the worlds of Natural Farming, Permaculture Design, and other regenerative frameworks.
+For years we have been consciously hammering at the question of how should we live? We have been searching out the most practical, impactful ways that we can reshape our lives to be fully present in the modern world, and yet connected deeper to parts of being human that the modern world has abandoned. A major source of inspiration and useful tools have come from the worlds of Fukuoka's Natural Farming and Permaculture Design.
 
-We don’t need to wait for politicians to change national policies, we don’t need to wait for corporations to develop products, and we don’t need to wait for universities to perform the research we need. There are practical steps driven by modern science and traditional knowledge that let us build healthier, happier, fuller lives for our families right now. There are simple questions we can seek out and answer as a community, right now. Let's get to it!
+There are so many challenges we face today at the national and global level that can make us feel helpless. But at the local level? Where we live? We don’t need to wait for politicians to change national policies, we don’t need to wait for corporations to develop products, and we don’t need to wait for universities to perform the research we need.
+
+We can transform our communities by taking practical steps driven by modern science and traditional knowledge. We can build healthier, happier, fuller lives for our families right now. There are simple questions we can seek out and answer as a community, right now. Let's get to it!
 
 ## Guiding Principles
 

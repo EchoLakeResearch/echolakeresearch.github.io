@@ -302,12 +302,23 @@ table td {
 table td:nth-child(2) {
   width: 10%;
 }
+@media(min-width: 800px) {
+   .figure {
+    float: right;
+    width: 70%;
+    padding: 12px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    margin-right: -40%;
+    clear: both;
+  }
+}
 img {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   width: 100%;
 }
 .caption {
-  display: none;
+  /*display: none; */
 }
 a,
 input,

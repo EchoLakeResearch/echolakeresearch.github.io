@@ -1,3 +1,5 @@
+
+
 # People Care
 
 One of the three core ethics of the permaculture design framework is "care of people". This simple checklist can be used in the course of a design process to try to build as accessible and caring of programs as possible with the resources we have available.
