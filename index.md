@@ -4,7 +4,11 @@ title: JM Padvorac Farm
 
 
 
-Our mission is to help connect the Echo Lake neighborhood, Malbty, Woodinville and surrounding communities through ecological gardening. Together we can have better food, stronger community and more resilient living. You follow us on [Facebook](https://www.facebook.com/JMPadvoracFarm/) for educational updates and events.
+If you came here because of our poster about weeds at the fair... welcome! You can read more here: ["I can eat that?" - good food and medicine from common weeds](/posts/common-weeds)
+
+----
+
+Our mission is to help connect the Echo Lake neighborhood, Malbty, Woodinville and surrounding communities through ecological gardening and living. Together we can have better food, stronger community and more resilient livelihoods. You follow us on [Facebook](https://www.facebook.com/JMPadvoracFarm/) for educational updates and events.
 
 Our emphasis is on finding practices that are easy to learn, forgiving to put into practice, and simple enough to become part of ordinary life. You can read more about our story and approach [here](/about).
 
@@ -13,7 +17,7 @@ Our emphasis is on finding practices that are easy to learn, forgiving to put in
 These are a free-form mix of how-to guide, story, essay and vignette. Enjoy, and feel free to share!
 
 * [Joyful Emergency Preparedness Gardening](/posts/joyful-emergency-preparedness)
-* 
+* ["I can eat that?" - good food and medicine from common weeds](/posts/common-weeds)
 
 ## <!--Kitchen-->
 
